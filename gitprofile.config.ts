@@ -20,142 +20,163 @@ const CONFIG = {
         limit: 8, // How many projects to display.
         exclude: {
           forks: false, // Forked projects will not be displayed if set to true.
-          projects: [], // These projects will not be displayed. example: ['arifszn/my-project1', 'arifszn/my-project2']
+          projects: [], // These projects will not be displayed. example: ['saadshaukat1/my-project1', 'saadshaukat1/my-project2']
         },
       },
       manual: {
         // Properties for manually specifying projects
-        projects: ['arifszn/gitprofile', 'arifszn/pandora'], // List of repository names to display. example: ['arifszn/my-project1', 'arifszn/my-project2']
+        projects: [], // List of repository names to display. example: ['saadshaukat1/my-project1', 'saadshaukat1/my-project2']
       },
     },
     external: {
       header: 'My Projects',
       // To hide the `External Projects` section, keep it empty.
-      projects: [
-        {
-          title: 'Project Name',
-          description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
-          imageUrl:
-            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-          link: 'https://example.com',
-        },
-        {
-          title: 'Project Name',
-          description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
-          imageUrl:
-            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-          link: 'https://example.com',
-        },
-      ],
+      projects: [],
     },
   },
-  seo: { title: 'Portfolio of Ariful Alam', description: '', imageURL: '' },
+  seo: { 
+    title: 'Muhammad Saad Shaukat - Senior .NET Full-Stack Engineer', 
+    description: 'Senior .NET Full-Stack Engineer with expertise in ASP.NET Core, Blazor, C#, and enterprise web applications. DevOps practitioner with CI/CD and Linux infrastructure experience.', 
+    imageURL: '' 
+  },
   social: {
-    linkedin: 'ariful-alam',
-    x: 'arif_szn',
-    mastodon: 'arifszn@mastodon.social',
+    linkedin: 'saadshaukat',
+    x: '',
+    mastodon: '',
     researchGate: '',
     facebook: '',
     instagram: '',
     reddit: '',
     threads: '',
-    youtube: '', // example: 'pewdiepie'
+    youtube: '',
     udemy: '',
     dribbble: '',
     behance: '',
-    medium: 'arifszn',
-    dev: 'arifszn',
-    stackoverflow: '', // example: '1/jeff-atwood'
+    medium: '',
+    dev: '',
+    stackoverflow: '',
     discord: '',
     telegram: '',
-    website: 'https://www.arifszn.com',
-    phone: '',
-    email: '',
+    website: '',
+    phone: '+92 333 5179056',
+    email: 'm.saadshaukat@gmail.com',
   },
   resume: {
-    fileUrl:
-      'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf', // Empty fileUrl will hide the `Download Resume` button.
+    fileUrl: '', // Empty fileUrl will hide the `Download Resume` button.
   },
   skills: [
-    'PHP',
-    'Laravel',
-    'JavaScript',
-    'React.js',
-    'Node.js',
-    'Nest.js',
+    'C#',
+    '.NET 8 / .NET Core',
+    'ASP.NET Core',
+    'Blazor (WASM & Server)',
+    'Entity Framework Core',
+    'MudBlazor',
+    'WPF',
+    'Windows Forms',
     'MySQL',
-    'PostgreSQL',
-    'Git',
+    'SQL Server',
+    'Python',
+    'JavaScript',
+    'HTML5',
+    'CSS3',
+    'Linux Administration',
     'Docker',
-    'PHPUnit',
-    'CSS',
-    'Antd',
-    'Tailwind',
+    'GitHub Actions',
+    'Nginx',
+    'DigitalOcean',
+    'New Relic APM',
+    'Azure',
+    'Git',
+    'GitHub Copilot',
   ],
   experiences: [
     {
-      company: 'Company Name',
-      position: 'Position',
+      company: 'KFA Software (SMC-Pvt) Ltd',
+      position: 'Senior C# Full Stack Engineer',
+      from: 'September 2025',
+      to: 'Present',
+      companyLink: 'https://kfasoftware.com',
+    },
+    {
+      company: 'KFA Software',
+      position: 'DevOps Engineer',
       from: 'September 2021',
       to: 'Present',
-      companyLink: 'https://example.com',
+      companyLink: 'https://kfasoftware.com',
     },
     {
-      company: 'Company Name',
-      position: 'Position',
-      from: 'July 2019',
-      to: 'August 2021',
-      companyLink: 'https://example.com',
+      company: 'XEPOS Ltd',
+      position: 'C# / WPF Developer',
+      from: 'June 2025',
+      to: 'August 2025',
+      companyLink: '',
     },
-  ],
-  certifications: [
     {
-      name: 'Lorem ipsum',
-      body: 'Lorem ipsum dolor sit amet',
-      year: 'March 2022',
-      link: 'https://example.com',
+      company: 'Technology Spirits Pvt Ltd',
+      position: 'Software Engineer II (PC Apps)',
+      from: 'January 2025',
+      to: 'May 2025',
+      companyLink: '',
+    },
+    {
+      company: 'KFA Software',
+      position: 'Full Stack Developer',
+      from: 'September 2021',
+      to: 'December 2024',
+      companyLink: 'https://kfasoftware.com',
+    },
+    {
+      company: 'Prince Sultan University',
+      position: 'Research Assistant',
+      from: 'October 2020',
+      to: 'March 2021',
+      companyLink: '',
+    },
+    {
+      company: 'The University of Lahore',
+      position: 'Deputy Director, Office of Research Innovation & Commercialization (ORIC)',
+      from: 'December 2017',
+      to: 'October 2020',
+      companyLink: '',
+    },
+    {
+      company: 'The University of Lahore',
+      position: 'Assistant Professor - Software Engineering Department',
+      from: 'October 2013',
+      to: 'October 2020',
+      companyLink: '',
     },
   ],
+  certifications: [],
   educations: [
     {
-      institution: 'Institution Name',
-      degree: 'Degree',
-      from: '2015',
-      to: '2019',
+      institution: 'UET Taxila',
+      degree: 'Master of Science (MS) in Software Engineering',
+      from: '',
+      to: '',
     },
     {
-      institution: 'Institution Name',
-      degree: 'Degree',
-      from: '2012',
-      to: '2014',
+      institution: 'UET Taxila',
+      degree: 'Bachelor of Science (BS) in Software Engineering',
+      from: '',
+      to: '',
     },
   ],
   publications: [
     {
-      title: 'Publication Title',
+      title: 'Synthesizing Secure Software Development Lifecycle Models and Activities',
       conferenceName: '',
-      journalName: 'Journal Name',
-      authors: 'John Doe, Jane Smith',
-      link: 'https://example.com',
+      journalName: 'Journal of Software: Practice and Experience',
+      authors: 'Alenezi, M., Shaukat, M. S., et al.',
+      link: '',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    },
-    {
-      title: 'Publication Title',
-      conferenceName: 'Conference Name',
-      journalName: '',
-      authors: 'John Doe, Jane Smith',
-      link: 'https://example.com',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+        'Peer-reviewed research on Secure Software Development Lifecycle (SSDLC) methodologies, combining high-level systems architecture with rigorous code maintainability and database optimization. Impact Factor: 2.6',
     },
   ],
   // Display articles from your medium or dev account. (Optional)
   blog: {
     source: 'dev', // medium | dev
-    username: 'arifszn', // to hide blog section, keep it empty
+    username: '', // to hide blog section, keep it empty
     limit: 2, // How many articles to display. Max is 10.
   },
   googleAnalytics: {
